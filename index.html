@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Go to the moon!</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="content">
+        <div class="image-left">
+            <div class="logo">
+                <img src="atronauta.png" alt="Astronaut" class="astronauta">
+                <h1>MoonX</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="text"></div>
+            <form>
+                <div class="form-title">
+                    <p>Let's do this!</p>
+                </div>
+                <div class="input">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text" required="">
+                </div>
+                <div class="input">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" required="">
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required="">
+                </div>
+                <div class="input">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="text" minlength="9" maxlength="9">
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" required="">
+                </div>
+                <div class="input">
+                    <label for="confirm-password">Confrim Password</label>
+                    <input id="confirm-password" type="password" required="">
+                </div>
+                <div>
+                    <input class="button" type="button" href="#" onclick="validatePass(event)" value="Sign Up">
+                </div>
+                <script>
+                    function validatePass() {
+                        let pass = document.getElementById("password")
+                        let confirmPass = document.getElementById("confirm-password")
+                        if (pass != confirmPass) {
+                            window.alert("Password do not match!")
+                        }
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
